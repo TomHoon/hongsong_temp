@@ -83,6 +83,7 @@
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
+            <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
               <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
@@ -94,6 +95,7 @@
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
+            <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
               <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
@@ -105,6 +107,7 @@
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
+            <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
               <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
@@ -114,20 +117,20 @@
         </div>
         <div class="hongsong-story">
           <img alt="스토리" src="@/assets/img/hongsong_story.png" class="story-title"/>
-          <ul class="story-img">
-            <li>
-              <img src="@/assets/img/banner01.png" alt="">
-            </li>
-            <li>
-              <img src="@/assets/img/banner01.png" alt="">
-            </li>
-            <li>
-              <img src="@/assets/img/banner01.png" alt="">
-            </li>
-            <li>
-              <img src="@/assets/img/banner01.png" alt="">
-            </li>
-          </ul>
+          <div class="story-images">
+            <div>
+              
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+          </div>
         </div>
       <!-- <div class="story">
         <img alt="스토리" src="@/assets/img/hongsong_story.png" class="storyTitle"/>
@@ -150,6 +153,25 @@
     <div class="sub-footer">
       <strong>홍송가구갤러리</strong>
     </div>
+    <div class="main-footer">
+      <ul class="footer-box">
+        <li>회사소개</li>
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>고객센터</li>
+      </ul>
+    </div>
+    <div class="juso">
+      <div>
+        <p>본사전시장 주소 : 경기도 하남시 샘재로 74-19(천현동) 대표: 노인경 신한은행 110-151-460100 예금주 노인경</p>
+      </div>
+      <div>
+        <p>사업자등록번호: 632-00257 통신판매신고: 2010-서울강동-0321호 TEL: 02-473-1357</p>
+      </div>
+      <div>
+        <p>전국대표: 02-473-1357 강남,서초 010-5780-9090 강동,송파 02-470-0384 강북,경기 010-8006-1982</p>
+      </div>
+    </div>
   </div>
   <!--  footer  -->
 </template>
@@ -164,7 +186,11 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import "@/assets/css/style.css";
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -543,22 +569,22 @@ html, body {
   width: 150px;
   height: 25px;
 }
-.story-img {
+.story-images {
   display: flex;
   margin:0px auto;
+  margin-top:10px ;
+  justify-content: space-between;
   width: 910px;
   margin-left: auto;
   margin-right: auto;
 }
-.story-img li{
-  margin:0px auto;
-  width: 200px;
-  display:inline;
-}
-.story-img li img{
-  width:217px;
+.story-images div{
+  width:206px;
+  height:206px;
+  background:gray;
 }
 .footer {
+  margin-top:20px;
   background:rgb(81, 80, 79);
   width:100vw;
   height:15vh;
@@ -569,6 +595,29 @@ html, body {
   height:24%;
 }
 .sub-footer strong{
+  color:white;
   line-height: 50px;
+  font-size: larger;
+  letter-spacing:4px;
+}
+.footer-box {
+  margin:0px auto;
+}
+.main-footer ul{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+}
+.footer-box li{
+  float:left;
+  list-style: none;
+  margin-left: 20px;
+  color:rgb(188, 160, 134);
+}
+.juso p {
+  font-size: small;
+  margin-top:5px;
+  color:rgb(188, 160, 134);
 }
 </style>
