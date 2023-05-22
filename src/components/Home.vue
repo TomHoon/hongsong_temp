@@ -1,6 +1,9 @@
 <template>
   <!--  header  -->
   <div id="header">
+    <a href="https://www.youtube.com/watch?v=low-oMExRkY">
+      <img id="youtube-logo" src="@/assets/img/11.png" alt="">
+    </a>
     <img id="headerImg" alt="갤러리" src="@/assets/img/header.png"/>
   </div>
   <!--  header  -->
@@ -64,70 +67,82 @@
         </div>
       </div>
       <div class="gallery1">
-        <div class="gal1-title">
-          <div>
-            <img alt="갤러리" src="@/assets/img/galleryLogo.png" class="gal1-title"/>
-          </div>
-          <div class="gal1-search">
-            <input type="search" placeholder="검색">
-          </div>
-          <div>
-            <img alt="검색" src="@/assets/icon/search_FILL0_wght400_GRAD0_opsz48.png" class="searchIcon"/>
-
+        <div class="gallery1-sub1">
+        </div>
+        <div class="gallery1-sub2">
+          <div></div>
+          <div><h2>Gallery</h2></div>
+          <div class="search-main">
+            <div class="search-area">
+              <input type="text">
+              <img src="@/assets/icon/searchbar.png" alt="">
+            </div>
           </div>
         </div>
       </div>
         <div class="gal1-images">
           <ul>
-            <li><img src="@/assets/img/sofa01.png" alt=""></li>
+            <li>
+              <a href="https://m.blog.naver.com/PostView.naver?blogId=gagu0385&logNo=222849909341&navType=by">
+                <img class="blog-img" src="@/assets/img/blog1.png" alt="">
+              </a>
+            </li>
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
             <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
-              <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
+              <img class="blog-like" alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
               <strong class="like-count">0</strong>
             </li>
           </ul>
           <ul>
-            <li><img src="@/assets/img/sofa01.png" alt=""></li>
+            <li>
+              <a href="https://m.blog.naver.com/PostView.naver?blogId=gagu0385&logNo=222824378642&navType=by">
+                <img class="blog-img" src="@/assets/img/blog2.png" alt="">
+              </a>
+            </li>
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
             <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
-              <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
+              <img class="blog-like" alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
               <strong class="like-count">0</strong>
             </li>
           </ul>
           <ul>
-            <li><img src="@/assets/img/sofa01.png" alt=""></li>
+            <li>
+              <a href="https://m.blog.naver.com/PostView.naver?blogId=gagu0385&logNo=222909862233&navType=by">
+                <img class="blog-img" src="@/assets/img/blog3.png" alt="">
+              </a>
+            </li>
             <li>
               <strong>디사모빌리에서 수입하는 독일ERPO의 ER100 리클라이너 쇼파 가죽갈이편!</strong>
             </li>
             <br>
             <li>독일남부 에르팅겐에서 1952년 시작된 에르뽀</li>
             <li class="like">
-              <img  alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
+              <img  class="blog-like" alt="좋아요" src="@/assets/icon/favorite_FILL0_wght400_GRAD0_opsz48.png"/>
               <strong class="like-count">0</strong>
             </li>
           </ul>
         </div>
         <div class="hongsong-story">
-          <img alt="스토리" src="@/assets/img/hongsong_story.png" class="story-title"/>
+          <h2>홍송가구 스토리</h2>
           <div class="story-images">
-            <div>
+            <div class="story-image1">
               
             </div>
-            <div>
+            <div class="story-image2">
 
             </div>
-            <div>
+            <div class="story-image3">
 
             </div>
-            <div>
+            <div class="story-image4">
 
             </div>
           </div>
@@ -534,9 +549,6 @@ html, body {
 #headerImg {
   width: 100vw;
 }
-.gallery1 {
-  display:flex;
-}
 .gal1-title {
   display: flex;
   width: 100px;
@@ -556,14 +568,27 @@ html, body {
 .gal1-images ul{
   width:289px;
 }
+.gal1-images ul li .blog-img{
+  height: 376px;
+}
 .gal1-images ul .like{
   display: flex;
+  cursor: pointer;
 }
 .like-count {
   line-height:44px;
 }
 .hongsong-story {
-  margin-top: 105px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.hongsong-story h2{
+  color:rgb(188, 160, 134);
+  font-size: 30px;
+  margin-bottom:30px;
+}
+.hongsong-story .story-images div:hover{
+  background-color:red;
 }
 .story-title {
   width: 150px;
@@ -587,7 +612,7 @@ html, body {
   margin-top:20px;
   background:rgb(81, 80, 79);
   width:100vw;
-  height:15vh;
+  height:20vh;
 }
 .sub-footer {
   background:rgb(188, 160, 134);
@@ -620,4 +645,68 @@ html, body {
   margin-top:5px;
   color:rgb(188, 160, 134);
 }
+.gallery1 {
+  margin: 0 auto;
+  width:900px;
+  height:200px;
+}
+.gallery1-sub1 {
+  width: 100%;
+  height: 100px;
+}
+.gallery1-sub2 {
+  display:flex;
+  width: 100%;
+  height:100px;
+}
+.gallery1-sub2 .search-main .search-area{
+  display:flex;
+}
+.gallery1-sub2 .search-main .search-area input{
+  float: left;
+  padding: 6px;
+  /* border: none; */
+  /* margin:0 auto; */
+  margin-left:50px;
+  width:200px;
+  margin-top:40px;
+  margin-bottom:20px;
+  font-size: 17px;
+}
+.gallery1-sub2 .search-main .search-area img{
+  width:40px;
+  height:40px;
+  margin-top:40px;
+}
+.gallery1-sub2 div{
+  width: 34%;
+  height: 100%;
+}
+.gallery1-sub2 h2{
+  font-weight: 2000;
+  font-size: 50px;
+  color: rgb(188, 160, 134);
+}
+/* input {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+} */
+#youtube-logo {
+  width: 60px;
+  height:40px;
+  z-index: 10000px;
+  position:absolute;
+  margin-top:20px;
+  top:30%;
+  left:50%;
+  opacity:0.7;
+}
+#header{
+  position:relative;
+}
 </style>
+<script>
+
+</script>
